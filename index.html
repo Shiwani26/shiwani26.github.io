@@ -1,534 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiwani Pradhananga | Business Analyst Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Custom CSS for animations and effects */
-        .hero-gradient {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        .skill-pill:hover {
-            background-color: #3b82f6;
-            color: white;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .fade-in {
-            animation: fadeIn 0.8s ease-out forwards;
-        }
-        .delay-100 {
-            animation-delay: 0.1s;
-        }
-        .delay-200 {
-            animation-delay: 0.2s;
-        }
-        .delay-300 {
-            animation-delay: 0.3s;
-        }
-        .section-divider {
-            position: relative;
-            height: 80px;
-            overflow: hidden;
-        }
-        .section-divider::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            height: 100%;
-            background: linear-gradient(to right bottom, #ffffff 49%, transparent 50%);
-            transform: skewY(-2deg);
-            transform-origin: bottom left;
-            z-index: -1;
-        }
-    </style>
+  <title>Shiwani Pradhananga | Business Analyst Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    .w3-sidebar {z-index: 3; width: 250px; top: 0; left: 0;}
+    .profile-img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  </style>
 </head>
-<body class="font-sans bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <span class="text-xl font-bold text-blue-600">Shiwani P.</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
-                    <a href="#experience" class="text-gray-700 hover:text-blue-600 transition">Experience</a>
-                    <a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Projects</a>
-                    <a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a>
-                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contact</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="menu-toggle" class="text-gray-700">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
-                
-                <button id="next-project" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-md w-10 h-10 flex items-center justify-center text-blue-600 hover:bg-blue-50 transition">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-card w3-animate-left" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <h3 class="w3-wide"><b>Shiwani</b></h3>
+    <img src="Shiwani.jpg" alt="Shiwani Pradhananga" class="profile-img w3-margin-top">
+  </div>
+  <a href="#about" class="w3-bar-item w3-button">About</a>
+  <a href="#skills" class="w3-bar-item w3-button">Skills</a>
+  <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+<!-- Page Content -->
+<div style="margin-left:250px">
+
+  <header class="w3-container w3-padding-32 w3-center w3-white">
+    <h1 class="w3-xxxlarge"><b>Shiwani Pradhananga</b></h1>
+    <h5>Business & Data Analyst</h5>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-large" id="about">
+    <h2 class="w3-text-black">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+      I'm a passionate Business Analyst with expertise in data analysis, visualization, and deriving actionable insights. 
+      My approach combines technical skills with business acumen to bridge the gap between data and decision-making.
+    </p>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="w3-container w3-padding-large" id="skills">
+    <h2 class="w3-text-black">Skills</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p><b>Languages & Tools:</b> SQL, Python, Pandas, Excel, R, Jupyter, VS Code</p>
+    <p><b>Visualization:</b> Power BI, Tableau</p>
+    <p><b>Workflows:</b> Git, Version Control, Jira</p>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="w3-container w3-padding-large" id="projects">
+    <h2 class="w3-text-black">Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <div class="w3-white w3-padding">
+          <h4>Telecom Churn Analysis</h4>
+          <p>Analyzed customer churn patterns to inform retention strategies.</p>
+          <a href="https://github.com/Shiwani26/Analyzing-correlationbetween-customer-churn-rate-and-charges-in-telecommunication-setting" target="_blank" class="w3-button w3-black w3-small">View Project</a>
         </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4 shadow-md">
-            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
-            <a href="#experience" class="block py-2 text-gray-700 hover:text-blue-600">Experience</a>
-            <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-600">Projects</a>
-            <a href="#skills" class="block py-2 text-gray-700 hover:text-blue-600">Skills</a>
-            <a href="#contact" class="block py-2 text-blue-600">Contact</a>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <div class="w3-white w3-padding">
+          <h4>RFM Analyzer Tool</h4>
+          <p>Segmented customers using automated RFM scoring in Python.</p>
+          <a href="https://github.com/Shiwani26/RFM-Analyzer-Tool" target="_blank" class="w3-button w3-black w3-small">View Project</a>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-gradient py-20">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Shiwani Pradhananga</h1>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-blue-600 mb-6">Business & Data Analyst</h2>
-                    <p class="text-gray-600 text-lg mb-8">Transforming complex data into actionable insights that drive business growth and operational efficiency.</p>
-                    <div class="flex space-x-4">
-                        <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition">Get In Touch</a>
-                        <a href="#projects" class="border border-blue-600 text-blue-600 px-6 py-3 rounded-md hover:bg-blue-50 transition">View Projects</a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center fade-in delay-100">
-                    <div class="bg-white p-2 rounded-full shadow-xl">
-                        <img src="images/Shiwani.jpeg" alt="Shiwani Pradhananga" class="w-64 h-64 object-cover rounded-full">
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <div class="w3-white w3-padding">
+          <h4>COVID-19 Risk Analysis</h4>
+          <p>Explored risk factors using SQL and public health data.</p>
+          <a href="https://medium.com/@shiwanipradhananga/exploratory-data-analysis-eda-of-covid-19-risk-factors-vaccination-age-and-gender-using-sql-60dabe2833b7" target="_blank" class="w3-button w3-black w3-small">Read Article</a>
         </div>
-    </header>
+      </div>
+    </div>
+  </div>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-3xl mx-auto text-lg">
-                    I'm a passionate Business Analyst with expertise in data analysis, visualization, and deriving actionable insights. 
-                    My approach combines technical skills with business acumen to bridge the gap between data and decision-making.
-                </p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition fade-in delay-100">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-chart-line text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Data-Driven</h3>
-                    <p class="text-gray-600">I base my recommendations on thorough data analysis and visualization to ensure measurable impact.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition fade-in delay-200">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-lightbulb text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Problem Solver</h3>
-                    <p class="text-gray-600">I excel at breaking down complex business challenges into manageable components with clear solutions.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition fade-in delay-300">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-users text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Collaborative</h3>
-                    <p class="text-gray-600">I work closely with stakeholders at all levels to align data initiatives with business objectives.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-light-grey" id="contact">
+    <h2 class="w3-text-black">Contact</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Email: <a href="mailto:shiwanipradhananga@gmail.com">shiwanipradhananga@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Shiwani26" target="_blank">github.com/Shiwani26</a></p>
+    <p>Medium: <a href="https://medium.com/@shiwanipradhananga" target="_blank">medium.com/@shiwanipradhananga</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/shiwani-pradhananga/" target="_blank">linkedin.com/in/shiwani-pradhananga</a></p>
+  </div>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-50">
-        <div class="section-divider"></div>
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Professional Experience</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md p-8 fade-in delay-100">
-                <div class="flex flex-col md:flex-row justify-between mb-6">
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-800">Data Analyst</h3>
-                        <!-- <p class="text-blue-600">AUSNEP IT Solutions</p> -->
-                    </div>
-                    <div class="mt-4 md:mt-0">
-                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">June 2024 - Present</span>
-                    </div>
-                </div>
-                <ul class="space-y-4 text-gray-700">
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
-                        <span>Collaborated with senior stakeholders to align data initiatives with business goals, translating objectives into actionable data solutions.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
-                        <span>Analysed large, complex datasets to uncover trends and opportunities, leading to a 15–25% improvement in operational efficiency.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
-                        <span>Designed and deployed interactive dashboards and reports using Power BI and Tableau, reducing manual reporting time by 40%.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
-                        <span>Led end-to-end data projects from discovery through implementation, delivering insights that supported strategic decision-making.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
-                        <span>Defined and monitored key business metrics (KPIs), providing actionable recommendations that improved customer retention and engagement.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
-                        <span>Supported data governance and quality improvement efforts, contributing to a 30% reduction in data errors.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-center w3-black">
+    <p>© 2025 Shiwani Pradhananga. All rights reserved.</p>
+  </footer>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Featured Projects</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-3xl mx-auto text-lg">
-                    Here are some of my recent projects that demonstrate my analytical skills and business impact.
-                </p>
-            </div>
-            <div class="relative">
-                <div class="flex overflow-x-auto pb-8 space-x-6 scroll-smooth" id="projects-container">
-                <button id="prev-project" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-md w-10 h-10 flex items-center justify-center text-blue-600 hover:bg-blue-50 transition">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                
-                <!-- Project 1 -->
-                <div class="project-card flex-shrink-0 w-80 bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition fade-in delay-100">
-                    <div class="h-48 bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
-                        <i class="fas fa-mobile-alt text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Telecom Customer Churn Analysis</h3>
-                        <p class="text-gray-600 mb-4">Investigated the relationship between customer churn rates and service charges to inform retention strategies.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Excel</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Tableau</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">GitHub</span>
-                        </div>
-                        <a href="https://github.com/Shiwani26/Analyzing-correlationbetween-customer-churn-rate-and-charges-in-telecommunication-setting" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-                            View Project <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition fade-in delay-200">
-                    <div class="h-48 bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center">
-                        <i class="fas fa-users text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">RFM Analyzer Tool</h3>
-                        <p class="text-gray-600 mb-4">Automated RFM analysis for customer segmentation, enabling businesses to identify key customer groups.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Python</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Pandas</span>
-                        </div>
-                        <a href="https://github.com/Shiwani26/RFM-Analyzer-Tool" target="_blank" class="text-purple-600 hover:text-purple-800 font-medium inline-flex items-center">
-                            View Project <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition fade-in delay-300">
-                    <div class="h-48 bg-gradient-to-r from-green-400 to-green-600 flex items-center justify-center">
-                        <i class="fas fa-virus text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">COVID-19 Risk Factors Analysis</h3>
-                        <p class="text-gray-600 mb-4">Examined the relationship between vaccination status, age, gender, and recovery outcomes.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">SQL</span>
-                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Data Analysis</span>
-                        </div>
-                        <a href="https://medium.com/@shiwanipradhananga/exploratory-data-analysis-eda-of-covid-19-risk-factors-vaccination-age-and-gender-using-sql-60dabe2833b7" target="_blank" class="text-green-600 hover:text-green-800 font-medium inline-flex items-center">
-                            View Project <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
+</div>
 
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-50">
-        <div class="section-divider"></div>
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Technical Skills</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="fade-in delay-100">
-                    <h3 class="text-xl font-semibold mb-6 text-gray-800">Languages & Tools</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">SQL</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Python</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Pandas</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">R</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Excel</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">SSMS</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Jupyter</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">VS Code</span>
-                    </div>
-                </div>
-                <div class="fade-in delay-200">
-                    <h3 class="text-xl font-semibold mb-6 text-gray-800">Data Analytics</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Data Cleaning</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Data Manipulation</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Exploratory Analysis</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Data Visualization</span>
-                    </div>
-                </div>
-                <div class="fade-in delay-300">
-                    <h3 class="text-xl font-semibold mb-6 text-gray-800">Visualization Tools</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Power BI</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Tableau</span>
-                    </div>
-                </div>
-                <div class="fade-in delay-400">
-                    <h3 class="text-xl font-semibold mb-6 text-gray-800">Workflow & Collaboration</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Git</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Version Control</span>
-                        <span class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm text-gray-700 border border-gray-200 transition">Jira</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificates Section -->
-    <section class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Certifications</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm fade-in delay-100">
-                    <div class="flex items-start">
-                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                            <i class="fas fa-certificate text-blue-600 text-2xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-1">Data Analytics Essentials</h3>
-                            <p class="text-gray-600 mb-2">Cisco Networking Essentials | 29 May</p>
-                            <ul class="text-gray-700 space-y-2">
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-blue-500 text-xs mt-1 mr-2"></i>
-                                    <span>Queried relational databases using SQL to extract meaningful business insights</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-blue-500 text-xs mt-1 mr-2"></i>
-                                    <span>Developed and improved data dashboards and visualisations using Tableau</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-blue-500 text-xs mt-1 mr-2"></i>
-                                    <span>Transformed, cleaned, and organised large datasets using Microsoft Excel</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm fade-in delay-200">
-                    <div class="flex items-start">
-                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                            <i class="fas fa-certificate text-blue-600 text-2xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-1">Data Analytics</h3>
-                            <p class="text-gray-600 mb-2">Deloitte | Forage | 10 April 2025</p>
-                            <ul class="text-gray-700 space-y-2">
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-blue-500 text-xs mt-1 mr-2"></i>
-                                    <span>Developed interactive dashboards by connecting Tableau to raw datasets</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-blue-500 text-xs mt-1 mr-2"></i>
-                                    <span>Designed intuitive layouts to spotlight key performance metrics</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check text-blue-500 text-xs mt-1 mr-2"></i>
-                                    <span>Implemented advanced Excel formulas to categorise sensitive compensation data</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-blue-600 text-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
-                <div class="w-20 h-1 bg-white mx-auto mb-6"></div>
-                <p class="max-w-3xl mx-auto text-lg text-blue-100">
-                    Interested in working together or have questions about my work? Feel free to reach out!
-                </p>
-            </div>
-            <div class="flex justify-center">
-            <div class="fade-in delay-100 w-full">
-                <h3 class="text-xl font-semibold mb-6 text-center">Contact Information</h3>
-                <div class="space-y-6">
-                    <div class="flex flex-col md:flex-row md:space-y-0 md:space-x-8 space-y-6 justify-center items-stretch">
-                        <!-- Email -->
-                        <div class="flex-1 flex items-center bg-blue-500 bg-opacity-10 rounded-lg p-4">
-                            <i class="fas fa-envelope text-blue-200 mr-4 text-2xl"></i>
-                            <div>
-                                <h4 class="font-medium">Email</h4>
-                                <p class="text-blue-100 break-all">shiwanipradhananga@gmail.com</p>
-                            </div>
-                        </div>
-                        <!-- GitHub -->
-                        <div class="flex-1 flex items-center bg-blue-500 bg-opacity-10 rounded-lg p-4">
-                            <i class="fab fa-github text-blue-200 mr-4 text-2xl"></i>
-                            <div>
-                                <h4 class="font-medium">GitHub</h4>
-                                <a href="https://github.com/Shiwani26" target="_blank" class="text-blue-100 hover:text-white break-all">github.com/Shiwani26</a>
-                            </div>
-                        </div>
-                        <!-- Medium -->
-                        <div class="flex-1 flex items-center bg-blue-500 bg-opacity-10 rounded-lg p-4">
-                            <i class="fab fa-medium text-blue-200 mr-4 text-2xl"></i>
-                            <div>
-                                <h4 class="font-medium">Medium</h4>
-                                <a href="https://medium.com/@shiwanipradhananga" target="_blank" class="text-blue-100 hover:text-white break-all">medium.com/@shiwanipradhananga</a>
-                            </div>
-                        </div>
-                        </div>
-                        <!-- LinkedIn -->
-                        <div class="flex-1 flex items-center bg-blue-500 bg-opacity-10 rounded-lg p-4">
-                            <i class="fab fa-linkedin text-blue-200 mr-4 text-2xl"></i>
-                            <div>
-                                <h4 class="font-medium">LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/shiwani-pradhananga/" target="_blank" class="text-blue-100 hover:text-white break-all"> https://www.linkedin.com/in/shiwani-pradhananga/</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <span class="text-xl font-bold">Shiwani Pradhananga</span>
-                    <p class="text-gray-400 mt-2">Business & Data Analyst</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="https://www.linkedin.com/in/shiwani-pradhananga/" class="text-gray-400 hover:text-white transition">
-                        <i class="fab fa-linkedin-in text-xl"></i>
-                    </a>
-                    <!-- <a href="#" class="text-gray-400 hover:text-white transition">
-                        <i class="fab fa-twitter text-xl"></i>
-                    </a> -->
-                    <a href="https://github.com/Shiwani26" target="_blank" class="text-gray-400 hover:text-white transition">
-                        <i class="fab fa-github text-xl"></i>
-                    </a>
-                    <a href="https://medium.com/@shiwanipradhananga" target="_blank" class="text-gray-400 hover:text-white transition">
-                        <i class="fab fa-medium text-xl"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Shiwani Pradhananga. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                
-                // Close mobile menu if open
-                document.getElementById('mobile-menu').classList.add('hidden');
-            });
-        });
-
-        // Animation on scroll
-        const fadeElements = document.querySelectorAll('.fade-in');
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-
-        fadeElements.forEach(element => {
-            observer.observe(element);
-        });
-
-        // Projects carousel navigation
-        const projectsContainer = document.getElementById('projects-container');
-        const prevBtn = document.getElementById('prev-project');
-        const nextBtn = document.getElementById('next-project');
-
-        prevBtn.addEventListener('click', () => {
-            projectsContainer.scrollBy({ left: -300, behavior: 'smooth' });
-        });
-
-        nextBtn.addEventListener('click', () => {
-            projectsContainer.scrollBy({ left: 300, behavior: 'smooth' });
-        });
-
-        // Hide arrows when at start/end
-        const checkArrows = () => {
-            prevBtn.style.display = projectsContainer.scrollLeft <= 0 ? 'none' : 'flex';
-            nextBtn.style.display = projectsContainer.scrollLeft + projectsContainer.clientWidth >= projectsContainer.scrollWidth ? 'none' : 'flex';
-        };
-
-        projectsContainer.addEventListener('scroll', checkArrows);
-        window.addEventListener('resize', checkArrows);
-        checkArrows(); // Initial check
-    </script>
 </body>
 </html>
